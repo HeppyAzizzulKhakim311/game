@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="decorations">
+      <div class="decoration left">
+        <div class="circle">
+          <img src="asset/rock.png" alt="rock" />
+        </div>
+        <div class="circle">
+          <img src="asset/scissors.png" alt="scissors" />
+        </div>
+        <div class="circle">
+          <img src="asset/paper.png" alt="paper" />
+        </div>
+      </div>
+      <div class="decoration right">
+        <div class="circle">
+          <img src="asset/paper.png" alt="paper" />
+        </div>
+        <div class="circle">
+          <img src="asset/rock.png" alt="rock" />
+        </div>
+        <div class="circle">
+          <img src="asset/scissors.png" alt="scissors" />
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="wrap">
+        <h1>Rock Paper Scissors Game</h1>
+        <div class="rules">
+          <h2>Aturan Permainan</h2>
+          <div class="rules-content">
+            <div class="rule-item">
+              <span class="rule-icon">✊</span>
+              <p>Batu (Rock) mengalahkan Gunting (Scissors)</p>
+            </div>
+            <div class="rule-item">
+              <span class="rule-icon">✌️</span>
+              <p>Gunting (Scissors) mengalahkan Kertas (Paper)</p>
+            </div>
+            <div class="rule-item">
+              <span class="rule-icon">✋</span>
+              <p>Kertas (Paper) mengalahkan Batu (Rock)</p>
+            </div>
+          </div>
+        </div>
+        <main>
+          <div class="topbar">
+            <div class="control">
+              <div class="reset">
+                <button>
+                  <img src="asset/redo.png" alt="reset" />
+                </button>
+              </div>
+            </div>
+            <div class="score">
+              <div class="scorecomputer">
+                <p>Computer:</p>
+                <p>0</p>
+              </div>
+              <div class="scoreuser">
+                <p>User:</p>
+                <p>0</p>
+              </div>
+            </div>
+          </div>
+          <div class="computerChoice">
+            <div class="computer">
+              <img />
+            </div>
+          </div>
+          <div class="info">
+            <div class="desc">
+              <p></p>
+            </div>
+          </div>
+          <div class="userChoice">
+            <div class="scissors">
+              <button id="scissors">
+                <img src="asset/scissors.png" alt="scissors" />
+              </button>
+            </div>
+            <div class="rock">
+              <button id="rock">
+                <img src="asset/rock.png" alt="rock" />
+              </button>
+            </div>
+            <div class="paper">
+              <button id="paper">
+                <img src="asset/paper.png" alt="paper" />
+              </button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="script.js"></script>
+</html>
